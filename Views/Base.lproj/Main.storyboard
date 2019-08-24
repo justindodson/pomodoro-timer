@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pomodoro_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dda-7l-Gw4">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="pqd-ZI-vXW">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.2060527503" green="0.47132122520000003" blue="0.96475929019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-ZM-gAT">
+                                <rect key="frame" x="162.5" y="469" width="50" height="50"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <state key="normal" backgroundImage="play.png"/>
+                                <connections>
+                                    <action selector="playBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzq-uY-Ydy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUt-Yc-Lgb">
+                                <rect key="frame" x="247.5" y="474" width="40" height="40"/>
+                                <state key="normal" backgroundImage="fastforward.png"/>
+                                <connections>
+                                    <action selector="fastForwardPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRn-E5-aqh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-O4-P6X">
+                                <rect key="frame" x="84" y="474" width="40" height="40"/>
+                                <state key="normal" backgroundImage="rewind.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ED-iH-Hyb">
+                                <rect key="frame" x="16" y="274" width="343" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.2060527503" green="0.47132122520000003" blue="0.96475929019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeP-ka-uS7">
+                                <rect key="frame" x="111" y="165" width="153.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.44133742495753425" green="0.73547469266575338" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wqp-qz-cd1">
+                                <rect key="frame" x="0.0" y="23" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.2060527503" green="0.47132122520000003" blue="0.96475929019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Pomodoro Timer" id="L5v-Vt-atW"/>
+                                </items>
+                            </navigationBar>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qyg-ro-IJY">
+                                <rect key="frame" x="16" y="98.5" width="343" height="2.5"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ED-iH-Hyb" secondAttribute="trailing" id="3gO-Zh-rxR"/>
+                            <constraint firstItem="Qyg-ro-IJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hb-Cy-vEx"/>
+                            <constraint firstItem="tUt-Yc-Lgb" firstAttribute="top" secondItem="9ED-iH-Hyb" secondAttribute="bottom" constant="80.5" id="F3c-xt-rTu"/>
+                            <constraint firstItem="x9p-ZM-gAT" firstAttribute="top" secondItem="9ED-iH-Hyb" secondAttribute="bottom" constant="75.5" id="LSf-TW-tGK"/>
+                            <constraint firstItem="tUt-Yc-Lgb" firstAttribute="leading" secondItem="x9p-ZM-gAT" secondAttribute="trailing" constant="35" id="LYh-aq-okC"/>
+                            <constraint firstItem="Qyg-ro-IJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UQl-Fq-QRA"/>
+                            <constraint firstItem="9ED-iH-Hyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wml-3I-YjE"/>
+                            <constraint firstItem="x9p-ZM-gAT" firstAttribute="leading" secondItem="deX-O4-P6X" secondAttribute="trailing" constant="35" id="aFd-Cg-w17"/>
+                            <constraint firstItem="9ED-iH-Hyb" firstAttribute="top" secondItem="JeP-ka-uS7" secondAttribute="bottom" constant="37" id="ag3-od-w4x"/>
+                            <constraint firstItem="9ED-iH-Hyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dPQ-3K-uUw"/>
+                            <constraint firstItem="deX-O4-P6X" firstAttribute="top" secondItem="9ED-iH-Hyb" secondAttribute="bottom" constant="80.5" id="esr-kO-6sz"/>
+                            <constraint firstItem="x9p-ZM-gAT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHe-dx-SSM"/>
+                            <constraint firstItem="JeP-ka-uS7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nIt-Es-Kzh"/>
+                            <constraint firstItem="JeP-ka-uS7" firstAttribute="top" secondItem="Qyg-ro-IJY" secondAttribute="bottom" constant="65" id="pw7-rR-EXv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qyg-ro-IJY" secondAttribute="trailing" id="tQJ-g4-wP4"/>
+                            <constraint firstItem="9ED-iH-Hyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBe-Ex-AcW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="L5v-Vt-atW" id="A77-q1-k8k"/>
+                        <outlet property="playPauseBtn" destination="x9p-ZM-gAT" id="app-rn-ofv"/>
+                        <outlet property="progressBar" destination="Qyg-ro-IJY" id="Jrh-2F-RSc"/>
+                        <outlet property="timerLabel" destination="9ED-iH-Hyb" id="Ccg-cn-M6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1655.2" y="63.418290854572717"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fastforward.png" width="40" height="40"/>
+        <image name="play.png" width="50" height="50"/>
+        <image name="rewind.png" width="40" height="40"/>
+    </resources>
+</document>
